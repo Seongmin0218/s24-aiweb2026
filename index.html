@@ -1,92 +1,281 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>🎲 AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스 — by s24</title>
-  <meta name="description" content="사용자가 장르와 캐릭터 정보를 입력하면 AI가 세계관, 로어북, 첫 장면을 생성하고 AI GM과 채팅으로 라이트 TRPG 세션을 진행하는 데모" />
+  <title>AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스 — by s24</title>
+  <meta
+    name="description"
+    content="장르와 캐릭터 정보를 입력하면 AI가 세계관, 로어북, 첫 장면을 생성하고 AI GM과 채팅으로 라이트 TRPG 세션을 진행하는 웹 서비스"
+  />
+
+  <meta property="og:title" content="AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스" />
+  <meta
+    property="og:description"
+    content="세계관 생성부터 AI GM 플레이까지 이어지는 라이트 TRPG 세션 제작 웹 서비스"
+  />
+  <meta property="og:image" content="screenshot.png" />
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- 11주차 — contents.md inline 렌더용 -->
-
+  <!-- contents.md inline 렌더용 -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-
 </head>
 
 <body>
+  <div class="page-orb page-orb-a"></div>
+  <div class="page-orb page-orb-b"></div>
 
-  <!-- ============ HERO ============ -->
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#">
+        <span class="brand-mark">✦</span>
+        <span>AI TRPG Forge</span>
+      </a>
 
-  <header class="hero">
-    <div class="container">
-      <h1>🎲 AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스</h1>
-      <p class="tagline">
-        장르와 캐릭터 정보를 입력하면 AI가 세계관, 로어북, 첫 장면을 생성하고
-        AI GM과 채팅으로 라이트 TRPG 세션을 진행하는 웹 서비스
-      </p>
+      <nav class="top-nav" aria-label="주요 링크">
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a href="#contents">Report</a>
+        <a href="#comments">Comments</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AI WEB 2026 · FINAL PROJECT</p>
 
-```
-<!-- ============ 데모 카드 ============ -->
-<section class="demo-card">
-  <img class="screenshot" src="screenshot.png" alt="AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스 데모 화면" />
+          <h1>
+            AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스
+          </h1>
 
-  <div class="cta">
-    <a class="btn btn-primary" href="https://seongmin-02-aiwebcalory.hf.space/" target="_blank" rel="noopener">
-      ▶ Live Demo
-    </a>
+          <p class="tagline">
+            장르와 캐릭터 정보를 입력하면 AI가 세계관, 로어북, 첫 장면을 생성하고
+            AI GM과 채팅으로 라이트 TRPG 세션을 진행하는 웹 서비스입니다.
+          </p>
 
-    <a class="btn btn-secondary" href="https://github.com/Seongmin0218/YOUR-REPOSITORY" target="_blank" rel="noopener">
-      ⌨ Source on GitHub
-    </a>
-  </div>
-</section>
+          <div class="hero-tags" aria-label="기술 태그">
+            <span>Python</span>
+            <span>Gradio</span>
+            <span>LLM</span>
+            <span>TRPG</span>
+            <span>LocalStorage</span>
+          </div>
 
-<!-- ============ 본문 (contents.md 인라인 렌더) ============ -->
-<section class="content">
-  <zero-md src="contents.md" no-shadow></zero-md>
-</section>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://seongmin-02-aiwebcalory.hf.space/" target="_blank" rel="noopener">
+              ▶ Live Demo
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/Seongmin0218/s24-aiweb2026" target="_blank" rel="noopener">
+              ⌨ Source on GitHub
+            </a>
+          </div>
+        </div>
 
-<!-- ============ Giscus 댓글 ============ -->
-<section id="comments" class="comments">
-  <h2>💬 이 프로젝트 어떠세요?</h2>
-  <p class="comments-note">
-    GitHub 계정으로 로그인하면 댓글이 본인 리포의 GitHub Discussions에 자동 저장됩니다.
-  </p>
+        <aside class="hero-preview" aria-label="프로젝트 화면 미리보기">
+          <div class="preview-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>TRPG Session UI</strong>
+          </div>
+          <img class="preview-image" src="screenshot.png" alt="AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스 데모 화면" />
+        </aside>
+      </div>
+    </section>
 
-  <div class="giscus"></div>
-  <script src="https://giscus.app/client.js"
-    data-repo="Seongmin0218/s24-aiweb2026"
-    data-repo-id="R_kgDOSP2hpA"
-    data-category="Announcements"
-    data-category-id="DIC_kwDOSP2hpM4C87em"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang="ko"
-    crossorigin="anonymous"
-    async>
-  </script>
-</section>
-```
+    <!-- ============ 핵심 요약 ============ -->
+    <section id="features" class="container feature-strip" aria-label="핵심 기능">
+      <article class="feature-card">
+        <span class="feature-icon">☉</span>
+        <h2>세계관 자동 생성</h2>
+        <p>세션 제목, 장르, 분위기를 바탕으로 플레이 가능한 세계관 초안을 만듭니다.</p>
+      </article>
 
+      <article class="feature-card">
+        <span class="feature-icon">☽</span>
+        <h2>캐릭터와 로어북</h2>
+        <p>플레이어 캐릭터를 정리하고 AI GM이 참고할 로컬 로어북을 구성합니다.</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">⚔</span>
+        <h2>AI GM 채팅 플레이</h2>
+        <p>입력한 행동에 따라 AI가 장면을 이어가며 가벼운 TRPG 세션을 진행합니다.</p>
+      </article>
+    </section>
+
+    <!-- ============ 데모 카드 ============ -->
+    <section id="demo" class="container demo-card">
+      <div class="section-heading">
+        <p class="eyebrow">PLAYABLE DEMO</p>
+        <h2>세션 제작부터 플레이까지 한 화면에서</h2>
+        <p>
+          좌측에는 캐릭터와 상태창, 우측에는 세션 로그와 행동 입력창을 배치했습니다.
+          HP, MP, SP는 바 형태로 확인할 수 있고, 행동 보조 기능으로 선택지와 주사위도 사용할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="demo-frame">
+        <div class="demo-glow"></div>
+        <img class="screenshot" src="screenshot.png" alt="AI 기반 라이트 TRPG 세션 생성 및 플레이 채팅 서비스 데모 화면" />
+      </div>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="https://seongmin-02-aiwebcalory.hf.space/" target="_blank" rel="noopener">
+          ▶ Live Demo
+        </a>
+        <a class="btn btn-secondary" href="https://github.com/Seongmin0218/s24-aiweb2026" target="_blank" rel="noopener">
+          ⌨ Source on GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 본문 contents.md 인라인 렌더 ============ -->
+    <section id="contents" class="container content-card">
+      <div class="section-heading">
+        <p class="eyebrow">PROJECT NOTE</p>
+        <h2>프로젝트 설명</h2>
+      </div>
+
+      <zero-md src="contents.md" no-shadow>
+        <template>
+          <style>
+            :host {
+              color: #243041;
+              font-family:
+                Pretendard,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+              line-height: 1.75;
+            }
+
+            h1, h2, h3 {
+              color: #101827;
+              letter-spacing: -0.04em;
+            }
+
+            h1 {
+              font-size: 2rem;
+              margin: 0 0 1rem;
+            }
+
+            h2 {
+              font-size: 1.45rem;
+              margin: 2rem 0 0.75rem;
+              padding-top: 1rem;
+              border-top: 1px solid rgba(120, 91, 38, 0.18);
+            }
+
+            h3 {
+              font-size: 1.15rem;
+              margin-top: 1.4rem;
+              color: #1d2d57;
+            }
+
+            p {
+              margin: 0.8rem 0;
+            }
+
+            ul, ol {
+              padding-left: 1.25rem;
+            }
+
+            li {
+              margin: 0.4rem 0;
+            }
+
+            a {
+              color: #1e3a8a;
+              font-weight: 800;
+            }
+
+            code {
+              padding: 0.12rem 0.35rem;
+              border-radius: 0.45rem;
+              background: rgba(214, 168, 79, 0.16);
+              color: #8f5c1c;
+            }
+
+            pre {
+              overflow: auto;
+              padding: 1rem;
+              border-radius: 1rem;
+              background: #101827;
+              color: #fff7e6;
+              border: 1px solid rgba(214, 168, 79, 0.28);
+            }
+
+            blockquote {
+              margin: 1rem 0;
+              padding: 0.8rem 1rem;
+              border-left: 4px solid #d6a84f;
+              border-radius: 0.8rem;
+              background: rgba(255, 250, 240, 0.72);
+            }
+
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              overflow: hidden;
+              border-radius: 1rem;
+              border: 1px solid rgba(120, 91, 38, 0.2);
+            }
+
+            th, td {
+              padding: 0.75rem;
+              border-bottom: 1px solid rgba(120, 91, 38, 0.16);
+            }
+
+            th {
+              color: #8f5c1c;
+              background: rgba(214, 168, 79, 0.12);
+            }
+          </style>
+        </template>
+      </zero-md>
+    </section>
+
+    <!-- ============ Giscus 댓글 ============ -->
+    <section id="comments" class="container comments">
+      <div class="section-heading">
+        <p class="eyebrow">FEEDBACK</p>
+        <h2>이 프로젝트 어떠세요?</h2>
+        <p class="comments-note">
+          GitHub 계정으로 로그인하면 댓글이 본인 리포의 GitHub Discussions에 자동 저장됩니다.
+        </p>
+      </div>
+
+      <div class="giscus"></div>
+
+      <script src="https://giscus.app/client.js"
+        data-repo="Seongmin0218/s24-aiweb2026"
+        data-repo-id="R_kgDOSP2hpA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOSP2hpM4CuM6E"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>
-        2026 AI 웹 융합 · 기말 프로젝트 소개 페이지 ·
-        <a href="https://aiweb2026.site">aiweb2026.site</a>
-      </p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>2026 AI 웹 융합 · 기말 프로젝트 소개 페이지 · <a href="https://aiweb2026.site/" target="_blank" rel="noopener">aiweb2026.site</a></p>
     </div>
   </footer>
 </body>
